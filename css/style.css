@@ -1,0 +1,820 @@
+@charset "UTF-8";
+
+/**CSS Reset**/
+body, div, span, h1, h2, h3, h4, h5, h6, header, footer, section, article, aside, details, figcaption, figure,  nav, menu, address, time, canvas, audio, video, p, pre, sup, sub, ul, ol, li, dl, dt, dd, form, input, button, textarea, select, iframe, img, a { padding: 0; margin: 0; list-style: none ;font-weight: normal}
+header, footer, section, article, aside, details, figcaption, figure, nav, menu { display: block; }
+
+a {text-decoration:none; outline:none;color:#282828}
+a:visited {}
+a:hover, a:active, a:focus {text-decoration:none; }
+a{ -webkit-tap-highlight-color:rgba(255,0,0,0);}
+.fl{ float:left;}
+.fr{ float:right;}
+.pr{ position:relative;}
+.pa{ position:absolute;}
+.dn{ display:none;}
+.db{ display:block;}
+.hidden{visibility:hidden;}
+.list_lh li:before{
+    content: "";
+}
+/* CSS 1,2 & 3 and HTML5 reset stylesheet */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/* 重置所有元素的盒模型 */
+textarea { resize: none; }
+
+/*  HTML5 CSS */
+article, aside, audio, footer, header, nav, section, video { display: block }
+/* 对于老的浏览器，如Firefox 3.6，由于不知道HTML5元素而将它们渲染为 display: inline 。这里不用管 date, figure和HTML5表单的input*/
+input{border:0;outline:none;/*去除蓝色边框*/}
+input[type="search"]{-webkit-appearance:textfield;}
+input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;border-radius: 0}
+input {-webkit-appearance:none; /*去除input默认样式*/}
+/* 去除Safari 或 Mobile Safari浏览器的HTML5搜索框和提交按钮的 OS X外观 */
+a,img,button,input,textarea{-webkit-tap-highlight-color:rgba(255,255,255,0);border:0;outline:none;}
+
+/*首页*/
+.HomePage{
+    width: 100%;
+    max-width: 1920px;
+    background: url("../img/Homepage.png") no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.slogn_x{
+    text-align: center;
+    margin-top: 170px;
+}
+.slogn{
+    width:55%;
+}
+.pmmc{
+    width:100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.pmmc_i{
+    width: 65%;
+}
+.Login{
+    text-align: center;
+    line-height: 55px;
+    display: block;
+    width: 240px;
+    height: 60px;
+    font-size: 18px;
+    color: #46c4ff;
+    border: 2px solid #7cd5ff;
+    border-radius: 80px;
+    margin: 56px auto;
+}
+.nav{
+    width:100%;
+    height: 70px;
+    background: rgba(255,255,255,0.6);
+    position: absolute;
+    bottom: 0;
+}
+.nav li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 10px 0;
+    transition: all 300ms linear 0s;
+}
+.nav li.active{
+    background: #00adff;
+}
+.nav li.active .yxtb{
+    background: url("../img/dtb.png") no-repeat center;
+    background-size:25px;
+}.nav li.active .zjtb{
+     background: url("../img/zjb.png") no-repeat center;
+     background-size:25px;
+ }
+.nav li.active .zbtb{
+    background: url("../img/zbb.png") no-repeat center;
+    background-size:25px;
+}
+.nav li.active .gytb{
+    background: url("../img/gyb.png") no-repeat center;
+    background-size:25px;
+}
+
+.nav li .tb{
+    margin: 0 auto;
+    width: 25px;
+    height: 30px;
+    background: url("../img/dtl.png") no-repeat center;
+    background-size:25px;
+}
+.nav li .zjtb{
+    background: url("../img/zjl.png") no-repeat center;
+    background-size:25px;
+}
+.nav li .zbtb{
+    background: url("../img/zbl.png") no-repeat center;
+    background-size:25px;
+}
+.nav li .gytb{
+    background: url("../img/gyl.png") no-repeat center;
+    background-size:25px;
+}
+.nav li span{
+    font-size: 14px;
+    text-align: center;
+    color: #00adff;
+}
+.nav li.active span{
+    color:#fff;
+}
+.nav li .dw{
+    display: none;
+    width: 240px;
+    background: #fff;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all 300ms linear 0s;
+}
+.nav li .ke{
+    padding-bottom: 20px;
+    position: absolute;
+    left:50%;
+    margin-left: -120px;
+    bottom:62px;
+}
+.nav li .dw a{
+    display: block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 38px;
+    color: #454545;
+    border-bottom: 1px solid #f6f6f6;
+}
+.nav li .dw a:hover{
+    color: #00adff;
+}
+.nav li .dw .sjd{
+    position: relative;
+    width: 100%;
+}
+.nav li .dw  .sjd .sj{
+    border-width:8px 8px 0;
+    border-style:solid;
+    border-color:#fff transparent transparent;/*灰 透明 透明 */
+    position:absolute;
+    bottom: -18px;
+    left:50%;
+    margin-left: -4px;
+}
+/*遗传学动态*/
+.development{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #f5f5f5;
+    padding-bottom: 80px;
+}
+.Dlhead_img{
+    max-width: 1920px;
+}
+.Dlhead_img img{
+    width: 100%;
+}
+.development .content{
+    overflow: hidden;
+    /*width: 1080px;*/
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+}
+.development .content .left{
+    /*width: 780px;*/
+    background: #fff;
+    padding: 20px 0 0 20px;
+}
+.development .content .left li{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.development .content .left li img{
+    width: 240px;
+    height: 140px;
+}
+.development .content .left li .list{
+    margin-left: 260px;
+    margin-top: 20px;
+    padding-right: 10px;
+    /*width: 460px;*/
+}
+.development .content .left li .list h3{
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.development .content .left li .list p{
+    font-size: 12px;
+    color: #b3b3b3;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 20px;
+    height: 60px;
+
+}
+.development .content .left li .list p:hover{
+    color: #50a6f8;
+}
+.development .content .right{
+    /*width:280px;*/
+    padding-right: 0;
+}
+.development .content .right .tt{
+    /*width: 280px;*/
+    /*height: 186px;*/
+    margin-bottom: 20px;
+}
+.development .content .right .tt img{
+    width: 100%;
+    height: 100%;
+}
+.development .content .right .Meeting,.gywm{
+    /*width: 280px;*/
+    background: #fff;
+}
+.development .content .right .Meeting p,.gywm p{
+    height: 46px;
+    line-height: 46px;
+    color:  #50a6f8;
+    font-size: 15px;
+    padding-left: 26px;
+    border-bottom: 1px solid #ededed;
+    position: relative;
+
+}
+.development .content .right .Meeting p span ,.gywm p span{
+    width: 2px;
+    height: 16px;
+    display: inline-block;
+    background: #50a6f8;
+    margin-right: 8px;
+    position: absolute;
+    top: 15px;
+    left: 16px;
+}
+.development .content .right .Meeting ul,.gywm ul{
+    width: 100%;
+    /* margin: 0 auto; */
+    padding: 0 16px;
+}
+.development .content .right .Meeting ul li,.gywm ul li a.cl{
+    color: #50a6f8;
+}
+.development .content .right .Meeting ul li,.gywm ul li{
+    font-size: 12px;
+    color: #b7b7b7;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #ededed;
+}
+.development .content .right .Meeting ul li a,.gywm ul li a{
+    color: #b7b7b7;
+}
+.development .content .right .Meeting ul li a:hover{
+    color: #50a6f8;
+}
+.development .content .right .gywm ul li a:hover{
+    color: #50a6f8;
+}
+/*.development .content .right .gywm ul li a:hover{*/
+/*color: #50a6f8;*/
+/*}*/
+.development  .content .Page_number{
+    width: 780px;
+    margin-top: 25px;
+    text-align: center;
+}
+.development  .Page_number span{
+    display: inline-block;
+    padding: 10px 12px;
+    background: #fff;
+    font-size: 10px;
+    color: #828282;
+    border: 1px solid #eeeeee;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.development  .Page_number span:hover{
+    background: #57baf5;
+    color: #fff;
+}
+.development  .Page_number .page.active{
+    background: #57baf5;
+    color: #fff;
+}
+
+/*---------------------------------------------------------------------------*/
+.header{
+    width:100%;
+    /*max-width: 1920px;*/
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 10px 0;
+    /*overflow: hidden;*/
+}
+.header .head{
+    /*width: 100%;*/
+    /*max-width: 1080px;*/
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    height: 60px;
+}
+.header .head .logo{
+    margin:10px 0 ;
+    padding: 0 10px;
+}
+.header .head .logo img{
+    display: block;
+    width: 100px;
+}
+.header .head ul{
+    min-height: 60px;
+    margin-left: 50px;
+}
+.header .head ul li{
+    padding: 0 20px;
+    float: left;
+    line-height: 60px;
+    position: relative;
+}
+.header .head ul li a{
+    display: block;
+    padding: 0 10px;
+    transition: all 300ms linear 0s;
+    color: #454545;
+}
+.header .head ul li a.ae{
+    color: #50a6f8;
+}
+.header .head ul li a.active{
+    color: #00adff;
+}
+.header .head ul li a:hover{
+    color: #00adff;
+}
+.headlogin{
+    padding: 8px 15px;
+    color: #00adff;
+    font-size: 16px;
+    border: 1px solid #00adff;
+    border-radius: 50px;
+    margin: 10px 0;
+    transition: all 300ms linear 0s;
+}
+.headlogin:hover{
+    color: #0099e2;
+}
+.header .head ul li .ke{
+    padding-top: 20px;
+    position: absolute;
+    left:50%;
+    margin-left: -120px;
+    top:55px;
+    z-index: 10;
+}
+.header .head ul li .ke .dw{
+    display: none;
+    width: 240px;
+    background: #fff;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all 300ms linear 0s;
+}
+.header .head ul li .ke .dw a{
+    display: block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    line-height: 38px;
+    color: #454545;
+    border-bottom: 1px solid #f6f6f6;
+}
+.header .head ul li .ke .dw a:hover{
+    color: #00adff;
+}
+footer{
+    width: 100%;
+    background-color: #272939;
+    padding: 40px 0;
+}
+footer .div{
+    /*width: 1080px;*/
+    margin: 0 auto;
+    overflow: hidden;
+}
+footer .div a{
+    color: #6b747d;
+}
+footer .div a:hover{
+    color: #92a0af;
+}
+footer .div ul{
+    float: left;
+    color: #92a0af;
+    font-size: 14px;
+    /*margin-right: 80px;*/
+}
+footer .div ul li{
+    line-height: 30px;
+}
+footer .div ul:last-child{
+    margin-right:0px;
+}
+footer .div ul li img{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px;
+}
+/*------------------------------------------------------------------*/
+/*关于我们_北京中科遗传与生殖医学*/
+.development .content .introduce .introduceList{
+    background: #fff;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.development .content .introduce .Committee{
+    padding: 20px 12px 0 12px;
+}
+.development .content .introduce .introduceList h3{
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.development .content .introduce .introduceList h3 span{
+    width: 3px;
+    height: 26px;
+    display: inline-block;
+    background: #4bacf7;
+    position: absolute;
+    left: -20px;
+    top: -4px;
+}
+.development .content .introduce .introduceList p{
+    font-size: 14px;
+    color: #bbbbbb;
+    line-height: 22px;
+}
+.development .content .right .gywm{
+    margin-bottom: 20px;
+}
+.development .content .right .gywm,.Meeting {
+    padding-bottom: 20px;
+}
+.development .content .introduce .introduceList .wymd{
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.development .content .introduce .introduceList .wymd li{
+    float: left;
+    box-sizing: border-box;
+    width: 232px;
+    margin: 0 10px;
+    border: 1px solid #ededed;
+    margin-bottom: 18px;
+}
+.development .content .introduce .introduceList .wymd li img{
+    width:230px;
+    height: 254px;
+}
+.development .content .introduce .introduceList .wymd li .td{
+    margin: 8px 10px;
+}
+.development .content .introduce .introduceList .wymd li .td .name{
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 12px;
+}
+.development .content .introduce .introduceList .wymd li .td .job{
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+/*中华医学杂志*/
+.development .content .introduce .introduceList .Magazine{
+    overflow: hidden;
+}
+.development .content .introduce .introduceList .Magazine .zz{
+    width: 204px;
+    height: 275px;
+}
+.development .content .introduce .introduceList .Magazine .zz img{
+    width:100%;
+    height: 100%;
+}
+.development .content .introduce .introduceList .Magazine .zzr h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.development .content .introduce .introduceList .Magazine .zzr li span{
+    font-size: 14px;
+    color: #999;
+    line-height: 29px;
+}
+.development .content .introduce .introduceList .zajj{
+    margin-top: 20px;
+}
+.development  .Dt{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.development .zhuanj{
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.development .zhuanj .ml li{
+    height: 238px;
+    overflow: hidden;
+    padding-left: 50px;
+    background: #fafafa;
+    border: 1px solid #ededed;
+    margin: 25px;
+}
+.development .zhuanj .ml li .img{
+    width: 192px;
+    height: 202px;
+    margin-top: 36px;
+}
+.development .zhuanj .ml li .img img{
+    width: 100%;
+    height: 100%;
+}
+.development .zhuanj .ml li .contentz h3{
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+/*-------------------------------------------------------*/
+.development .Genetic h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.development .Genetic p{
+    color: #9f9f9f;
+}
+.development .Genetic p.author{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.zhibozt{
+    background-color: #ffffff;
+    padding: 15px 0px;
+    margin: 20px auto;
+}
+.zhibozt ul{
+    overflow: hidden;
+}
+.zhibozt ul li{
+    float: left;
+    margin-left: 25px;
+    padding: 5px 20px;
+    border: 1px solid #d6d6d6;
+    color: #d6d6d6;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+}
+.zhibozt ul li.active{
+    background-color: #00adff;
+    color: #ffffff;
+    border: 1px solid #00adff;
+}
+.zhibozt ul li:hover{
+    background-color: #00adff;
+    color: #ffffff;
+    border: 1px solid #00adff;
+}
+.zbsplist{
+    overflow: hidden;
+    padding: 20px 15px;
+    background-color: #ffffff;
+}
+.zbsplist li{
+    position: relative;
+    /* float: left; */
+    /* max-width: 494px; */
+    /* max-height: 312px; */
+    padding: 0;
+    margin: 15px;
+    overflow: hidden;
+}
+.zbsplist li .img:hover{
+    transform:scale(1.05);//设置缩放比例
+-ms-transform:scale(1.05);
+    -webkit-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+}
+.zbsplist li .img{
+    width: 100%;
+    display: block;
+    transition: all 300ms linear 0s;
+}
+.zbsplist li a{
+    display: block;
+}
+.jbbox{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(175, 175, 175, 0.2);
+    background:-moz-linear-gradient(top, #ffffff00, rgba(0, 0, 0, 0.5));
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff00), to(rgba(0, 0, 0, 0.5)));
+}
+.jbbox .pt{
+    color: #ffffff;
+    margin-top: 94px;
+    padding: 0 20px;
+    line-height: 24px;
+    height: 50px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+.jnamebox{
+    padding: 10px 20px;
+}
+.jbbox .jpname{
+    color: #ffffff;
+    float: left;
+}
+.jbbox .zbzt{
+    float: right;
+    border-radius: 40px;
+    background-color: #e2e2e2;
+    font-size: 14px;
+    padding: 2px 10px;
+    color: #737373;
+}
+.jbbox .zbzt. img{
+
+}
+.jbbox .zbzt.zzzb{
+    background-color: #009dff;
+    color: #ffffff;
+}
+.jbbox .zbzt.zzzb i{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../img/ztzb.jpg") no-repeat  left center;
+    float: left;
+}
+.jbbox .zbzt.zzwc{
+    background-color: #00c0cb;
+    color: #ffffff;
+}
+.jbbox .zbzt.zzwc i{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../img/zbwc.jpg") no-repeat  left center;
+    float: left;
+}
+
+@media (max-width:980px){
+    .slogn_x{
+        margin-top: 400px;
+    }
+    .header .head ul{
+        margin-left: 0;
+    }
+    .header .head ul li{
+        padding: 0 5px;
+    }
+    .headlogin{
+        font-size: 12px;
+    }
+}
+@media (max-width:1024px){
+    .header .head ul{
+        margin-left: 0;
+    }
+    .headlogin{
+        font-size: 12px;
+    }
+}
+/*---------------------------------------------------------------------*/
+.development .content .introduce{
+    /*width: 780px;*/
+}
+.development .content .introduce .introduceList .wymd{
+    width: 100%;
+}
+.development .content .introduce .introduceList .wymd li{
+    width: 28%;
+    overflow: hidden;
+}
+.development .content .introduce .introduceList .wymd li img{
+    width: 100%;
+    height: auto;
+}
+.development .content .introduce .introduceList .wymd li p{
+    /*width: 200px;*/
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.development .content .introduce .introduceList .Magazine .zzr{
+    /*width: 300px;*/
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.introduceListycy img{
+    margin: 10px auto;
+    display: block;
+}
+.introduceListycy{
+    font-size: 14px;
+    color: #b7b7b7;
+}
+.development .content .introduce .introduceList h3{
+    color: #000;
+}
+.development .Genetic1 img{
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+.development .content .introduce .introduceList{
+    position: relative;
+}
+.development .content .introduce .introduceList botton{
+    position: absolute;
+    right: 22px;
+    bottom: 10px;
+}
+.development .content .introduce .introduceList botton:hover{
+    color: #00adff;
+}
+.development .zhuanj{
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.development .zhuanj .ml li .contentz{
+    width: calc(100% - 255px);
+    margin: 50px 0 0 50px;
+}
+.development .zhuanj .ml li .contentz p{
+    font-size: 13px;
+    color: #c9c9c9;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+.development .Genetic{
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 50px 40px;
+    padding-bottom: 20px;
+}
+.development .zhuanj .ml li .contentz p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

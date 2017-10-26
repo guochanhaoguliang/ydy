@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>云答遗-专家名录</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="head container">
+        <div class="logo  fl"><a href="index.html"><img src="img/logo.png"></a></div>
+        <ul class="fl">
+            <li class="dwgywo"><a href="index.html">首页</a></li>
+            <li class="dwgywo"><a href="medical_development.html">动态</a></li>
+            <li class="dwgywo"><a href="Directory.html" class="ae">专家名录</a></li>
+            <li class="dwgywo"><a href="zhibopeixun.html">直播培训</a></li>
+            <li class="dwgywo">
+                <a href="inheritance.html">关于我们</a>
+                <div class="ke">
+                    <div class="dw">
+                        <a href="inheritance.html" id="ycy1">遗传云</a>
+                        <a href="about_zhyx.html" id="zz1">中华医学遗传学杂志</a>
+                        <a href="about_hyh.html" id="wyh1">海医会-遗传与生殖专业委员会</a>
+                        <a href="about_bj.html" id="yjy1">北京中科遗传与生殖医学研究院</a>
+                        <div class="sjdw"><i class="sjw1"></i></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <a href="http://www.baidu.com" class="headlogin fr">遗传与生殖医学咨询培训平台登陆</a>
+    </div>
+</div>
+
+    <!--<div class="header">-->
+        <!--<div class="head">-->
+            <!--<div class="logo  fl"><a href="index.html"><img src="img/logo.png"></a></div>-->
+            <!--<ul class="fl">-->
+                <!--<li><a href="index.html">首页</a></li>-->
+                <!--<li><a href="medical_development.html">动态</a></li>-->
+                <!--<li><a href="Directory.html" class="ae">专家名录</a></li>-->
+                <!--<li><a href="zhibopeixun.html">直播培训</a></li>-->
+                <!--<li><a href="inheritance.html">关于我们</a></li>-->
+            <!--</ul>-->
+            <!--<a href="http://www.baidu.com" class="headlogin fr">遗传与生殖医学咨询培训平台登陆</a>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div class="development ">
+        <div class="Dlhead_img"><img src="img/Directory.png" alt=""></div>
+        <div class="zhuanj container">
+            <ul class="ml" id="zjml">
+                <!--<li>-->
+                    <!--<div class="img fl"><img src="img/5.png" alt=""></div>-->
+                    <!--<div class="contentz fl">-->
+                        <!--<h3>闫伟刚</h3>-->
+                        <!--<p>主任医生/教授</p>-->
+                        <!--<p>1922年8月31日（民国十一年），吴孟超生于福建省闽清县，马来西亚归侨，5岁时他跟随母亲来到马来西亚投奔父亲。-->
+                            <!--在马来西亚，幼年吴孟超一边帮父亲割橡胶一边读书。</p>-->
+                    <!--</div>-->
+                <!--</li>-->
+            </ul>
+        </div>
+        <div class="Page_number Dt" id="mlnum">
+            <!--<span class="page">1</span>-->
+            <!--<span class="page">2</span>-->
+            <!--<span class="page">3</span>-->
+            <!--<span class="page">4</span>-->
+            <!--<span class="page">5</span>-->
+            <span class="btn" onclick="nextpage(this)">下一页</span>
+        </div>
+    </div>
+
+<footer>
+    <div class="div container">
+        <ul class="col-md-2 col-sm-2">
+            <li class="top" id="fycdt">医学动态</li>
+            <li><a href="medical_development.html" id="fdt">动态</a></li>
+            <li><a href="#hymd" id="fhy">会议</a></li>
+        </ul>
+        <ul class="col-md-2 col-sm-2">
+            <li class="top" id="fzjml">专家名录</li>
+            <li><a href="Directory.html" id="fml">专家名录</a></li>
+
+        </ul>
+        <ul class="col-md-2 col-sm-2">
+            <li class="top" id="fzbpx">直播培训</li>
+            <li><a href="zhibopeixun.html" id="fzb">直播培训</a></li>
+
+        </ul>
+        <ul class="col-md-3 col-sm-3">
+            <li class="top" id="fgy">关于我们</li>
+            <li><a href="inheritance.html" id="fycy">遗传云</a></li>
+            <li><a href="about_zhyx.html" id="fzhyx">中华医学遗传学杂志</a></li>
+            <li><a href="about_hyh.html" id="fhyh">海医会-遗传与生殖专业委员会</a></li>
+            <li><a href="about_bj.html" id="fbj">北京中科遗传与生殖医学研究院</a></li>
+        </ul>
+        <ul class="col-md-3 col-sm-3">
+            <li class="top">主办单位</li>
+            <li><img src="img/icon1.png"> 北京医学遗传学杂志社</li>
+            <li class="top">协办单位</li>
+            <li><img src="img/icon2.png"> 北京中科遗传与生殖医学研究所</li>
+            <li class="top">联合主办单位</li>
+            <li><img src="img/icon3.png"> 海峡两岸医药卫生交流协会遗传与生殖专业委员会</li>
+        </ul>
+    </div>
+</footer>
+</body>
+<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/Directory.js"></script>
+<script type="text/javascript" src="js/footer.js"></script>
+<script></script>
+</html>
